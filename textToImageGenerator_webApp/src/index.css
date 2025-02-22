@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: outfit;
+  
+}
+
+/* ------ adding fonts -------- */
+@font-face{
+  font-family: font1;
+  src: url('./assets/fonts/font_1.woff2');
+}
+@font-face{
+  font-family: font2;
+  src: url('./assets/fonts/font_2.woff2');
+}
+@font-face{
+  font-family: font3;
+  src: url('./assets/fonts/font_3.woff2');
+}
+@font-face{
+  font-family: font4;
+  src: url('./assets/fonts/font_4.woff2');
+}
+@font-face{
+  font-family: font5;
+  src: url('./assets/fonts/font_5.woff2');
+}
+@font-face{
+  font-family: font6;
+  src: url('./assets/fonts/font-6.woff2');
+}
+
+ /* --------- INTRODUCTION-Page -------- */
+ .txt-shadow{
+  text-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+ }
+ 
+ 
+
+ /* ----------- BORDER ANIMATION --------------- */
+ /* @property --angle{
+   syntax: '<angle>'; 
+   inherits: false;
+   initial-value: 0deg;
+ } */
+@layer utilities{
+
+
+  .wrapper{
+    --angle: 0deg;
+    @apply h-[30vh] w-[30vw] relative rounded-xl 
+  }
+  .wrapper::after{
+    background-image: conic-gradient(from var(--angle), transparent 50%, red );
+
+    @apply content-['hello'] absolute w-[100%] h-[100%] top-[50%] left-[50%];
+    @apply translate-x-[-50%] translate-y-[-50%] p-[10vw] ;
+
+    animation: spin 1s linear infinite;
+
+  }
+
+  .content{
+    @apply w-[100%] h-[100%] absolute z-10 bg-orange-500
+  }
+}
+
+/* @keyframes spin{
+  from{--angle: 0deg;}
+  to{--angle: 360deg;}
+  } */

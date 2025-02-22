@@ -15,7 +15,7 @@ This project is a full-stack web application built using the MERN (MongoDB, Expr
 
 ## Introduction
 
-This is Project aims to simplify the image generated form texts. Simply pass the prompt and get your AI version Image
+This Project aims to simplify the image generated form texts. Simply pass the prompt and get your AI version Image
 
 ## Technologies Used
 

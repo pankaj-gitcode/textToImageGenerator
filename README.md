@@ -9,8 +9,7 @@ This project is a full-stack web application built using the MERN (MongoDB, Expr
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Running the Application](#running-the-application)
-- [Project Structure](#project-structure) 
-- [Features](#features) (Optional)
+
 
 
 

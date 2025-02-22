@@ -1,8 +1,6 @@
 # textToImageGenerator
 
 
-# Project Name (Replace with your project name)
-
 This project is a full-stack web application built using the MERN (MongoDB, Express.js, React, Node.js) stack.  It provides [briefly describe the project's purpose - e.g., a platform for sharing recipes, a task management tool, etc.].
 
 ## Table of Contents
